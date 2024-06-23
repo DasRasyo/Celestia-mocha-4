@@ -10,7 +10,7 @@ echo -e "\____/\____/_/ /_/\__  /\__ _/\___/_/   \____/_/       ";
 echo -e "                    /_/                                ";
 echo -e "                                                       ";
 
-echo -e "\033[38;5;245mTwitter : https://twitter.com/Conquerorr_1\033[0m"
+echo -e "\033[38;5;245mTwitter : https://x.com/cqrlabs_tech\033[0m"
 echo -e "\033[38;5;245mGithub  : https://github.com/DasRasyo\033[0m"
 echo -e "\033[35mCelestia - Modularism, not maximalism\033[0m"
 
