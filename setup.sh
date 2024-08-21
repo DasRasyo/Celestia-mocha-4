@@ -65,7 +65,7 @@ cd $HOME
 rm -rf celestia-node
 git clone https://github.com/celestiaorg/celestia-node.git
 cd celestia-node/
-git checkout tags/v0.15.0
+git checkout tags/v0.16.0-rc0
 make build
 make install
 make cel-key
@@ -190,7 +190,7 @@ cd $HOME
 rm -rf celestia-node
 git clone https://github.com/celestiaorg/celestia-node.git
 cd celestia-node/
-git checkout tags/v0.15.0
+git checkout tags/v0.16.0-rc0
 make build
 make install
 make cel-key
@@ -320,7 +320,7 @@ cd $HOME
 rm -rf celestia-node
 git clone https://github.com/celestiaorg/celestia-node.git
 cd celestia-node/
-git checkout tags/v0.15.0
+git checkout tags/v0.16.0-rc0
 make build
 make install
 make cel-key
@@ -452,7 +452,7 @@ cd $HOME
 rm -rf celestia-app 
 git clone https://github.com/celestiaorg/celestia-app.git 
 cd celestia-app/ 
-APP_VERSION=v1.13.0
+APP_VERSION=v2.0.0
 git checkout tags/$APP_VERSION -b $APP_VERSION
 make install
 
@@ -499,7 +499,7 @@ After=network-online.target
 
 [Service]
 User=$USER
-ExecStart=$HOME/go/bin/celestia-appd start
+ExecStart=$HOME/go/bin/celestia-appd start --v2-upgrade-height 2585031
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=4096
